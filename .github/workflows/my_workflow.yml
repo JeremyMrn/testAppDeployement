@@ -38,3 +38,10 @@ jobs:
             Build/Build/Products
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
+          
+      - name: Deploy to TestFlight
+        run: bundle exec fastlane deploy_to_testflight
+        env:
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+          FASTLANE_ITC_TEAM_ID: ${{ secrets.ITC_TEAM_ID }}
+          FASTLANE_ITC_TEAM_NAME: ${{ secrets.ITC_TEAM_NAME }}
