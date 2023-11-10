@@ -21,10 +21,10 @@ platform :ios do
  puts ENV['ASC_KEY']
  puts "Environnement variable fin"
    app_store_connect_api_key(
+     duration: 200,
      key_id: 'SVY55HBB7J',
      issuer_id: '69a6de87-d313-47e3-e053-5b8c7c11a4d1',
-     key_content: 'MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgEC1VJGeepF7CuCtWeZ2tIwO2USnAHRk6ps+ho8R7FQWgCgYIKoZIzj0DAQehRANCAARunZZB4e0zPvCX/vAMlcLy2CCLBjC/839A0k5UwHkFhDRx7QyitW7NcwIhUGj0aukfhlGJCYYYcQbI
-+BhRPMm/',
+     key_content: '-----BEGIN PRIVATE KEY-----MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgEC1VJGeepF7CuCtWeZ2tIwO2USnAHRk6ps+ho8R7FQWgCgYIKoZIzj0DAQehRANCAARunZZB4e0zPvCX/vAMlcLy2CCLBjC/839A0k5UwHkFhDRx7QyitW7NcwIhUGj0aukfhlGJCYYYcQbI+BhRPMm/-----END PRIVATE KEY-----',
      is_key_content_base64: true,
      in_house: false # detecting this via ASC private key not currently supported
    )
