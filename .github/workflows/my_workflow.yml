@@ -34,8 +34,8 @@ jobs:
             }}
           restore-keys: '${{ runner.os }}-deps-v1-'
       - name: Decode signing certificate into a file
-        env: null
-        CERTIFICATE_BASE64: '${{ secrets.IOS_DIST_SIGNING_KEY }}'
+        env:
+          CERTIFICATE_BASE64: '${{ secrets.IOS_DIST_SIGNING_KEY }}'
         run: |
           echo $CERTIFICATE_BASE64 | base64 --decode > signing-cert.p12
       - name: Build & upload iOS binary
