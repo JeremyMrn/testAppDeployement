@@ -3,7 +3,7 @@ default_platform :ios
 
 platform :ios do
 
-  app_identifier "com.votreentreprise.votreapp"
+  app_identifier "com.esystemes.mbc"
 
   #Lane 1 de tests
   desc 'Builds project and executes unit tests'
