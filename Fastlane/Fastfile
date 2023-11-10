@@ -13,9 +13,7 @@ platform :ios do
   desc 'Builds and deploys to TestFlight'
   lane :deploy_to_testflight do |options|
     # Ajoutez les étapes nécessaires pour la construction de l'application ici
-    gym(
-      allow_provisioning_updates: true
-    )
+    gym
     # Envoyer la version à TestFlight
     pilot
   end
