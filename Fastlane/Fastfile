@@ -14,7 +14,7 @@ platform :ios do
   lane :deploy_to_testflight do |options|
     # Ajoutez les étapes nécessaires pour la construction de l'application ici
     gym(
-	allow_provisioning_updates: true
+	xcargs: "-allowProvisioningUpdates"
 	)
     # Envoyer la version à TestFlight
     pilot
