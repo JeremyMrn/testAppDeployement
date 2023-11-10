@@ -1,6 +1,5 @@
 fastlane_version '2.157'
 default_platform :ios
-app_identifier('com.esystemes.mbc')
 
 platform :ios do
 
