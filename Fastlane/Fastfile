@@ -77,7 +77,6 @@ end
 
    # fetches and installs provisioning profiles from ASC
    sigh(
-     adhoc: options[:adhoc],
      api_key: api_key,
      readonly: true,
    )
