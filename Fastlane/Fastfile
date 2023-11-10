@@ -80,7 +80,6 @@ end
      adhoc: options[:adhoc],
      api_key: api_key,
      readonly: true,
-     app_identifier: 'com.esystemes.mbc'
    )
  end
 
