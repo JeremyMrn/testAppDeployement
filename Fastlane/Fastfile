@@ -75,11 +75,6 @@ end
      keychain_password: keychain_password
    )
 
-   # fetches and installs provisioning profiles from ASC
-   sigh(
-     api_key: api_key,
-     readonly: true,
-   )
  end
 
 
